@@ -1,21 +1,37 @@
 Un client al unei banci depune initial la banca suma de 500 de euro cu o dobanda de 10% pe an. Sa se afiseze soldul per fiecare an, daca lasa banii la banca 5 ani.
 
+Prima versiune:
 
-1. sa adaugam la suma initiala dobanda * 5, dar dobanda se chimba in fiecare an pentru ca suma initiala se schimba datorita adaosului de dobanda an dupa an.
+<?php
 
-$sumaPLus ar fi suma de dupa un an, dar noi vrem sa ajungem la suma de dupa 5 ani.
+$sumaInitiala = 500;
+$dobanda = ($sumaInitiala * 10)/100;
+$sumaPlus = $sumaInitiala + $dobanda;
+$dobanda2 = ($sumaPlus * 10)/100;
+$sumaPlus2 = $sumaPlus + $dobanda2;
+$dobanda3 = ($sumaPlus2 * 10)/100;
+$sumaPlus3 = $sumaPlus2 + $dobanda3;
+$dobanda4 = ($sumaPlus3 * 10)/100;
+$sumaPlus4 = $sumaPlus3 + $dobanda4;
+$dobanda5 = ($sumaPlus4 * 10)/100;
+$sumaPlus5 = $sumaPlus4 + $dobanda5;
+
+//depunere initiala
+echo "Sold depunere initiala: " . $sumaInitiala . " Euro" . "<br>";
 
 
-Formula pentru calcularea soldului la sfârșitul fiecărui an este:
+echo "Sold la sfârșitul anului 1: " . $sumaPlus . " Euro" . "<br>";
 
-Sold final = Suma depusă * (1 + Rata dobânzii) ^ Numărul de ani
 
-Astfel, pentru depozitul inițial de 500 de euro și o dobândă de 10% pe an, soldul la sfârșitul fiecărui an ar fi:
+echo "Sold la sfârșitul anului 2: " . $sumaPlus2 . " Euro" . "<br>";
 
-La sfârșitul anului 1: 500 * (1 + 0.1) ^ 1 = 550 euro
-La sfârșitul anului 2: 500 * (1 + 0.1) ^ 2 = 605 euro
-La sfârșitul anului 3: 500 * (1 + 0.1) ^ 3 = 665.5 euro
-La sfârșitul anului 4: 500 * (1 + 0.1) ^ 4 = 732.05 euro
-La sfârșitul anului 5: 500 * (1 + 0.1) ^ 5 = 805.26 euro
-Astfel, soldul la sfârșitul fiecărui an ar crește treptat, ajungând la 805.26 de euro după cinci ani.
 
+echo "Sold la sfârșitul anului 3: " . $sumaPlus3 . " Euro" . "<br>";
+
+
+echo "Sold la sfârșitul anului 4: " . $sumaPlus4 . " Euro" . "<br>";
+
+
+echo "Sold la sfârșitul anului 5: " . $sumaPlus5 . " Euro" . "<br>";
+
+?>
