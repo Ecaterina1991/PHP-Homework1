@@ -1,0 +1,21 @@
+Un client al unei banci depune initial la banca suma de 500 de euro cu o dobanda de 10% pe an. Sa se afiseze soldul per fiecare an, daca lasa banii la banca 5 ani.
+
+
+1. sa adaugam la suma initiala dobanda * 5, dar dobanda se chimba in fiecare an pentru ca suma initiala se schimba datorita adaosului de dobanda an dupa an.
+
+$sumaPLus ar fi suma de dupa un an, dar noi vrem sa ajungem la suma de dupa 5 ani.
+
+
+Formula pentru calcularea soldului la sfârșitul fiecărui an este:
+
+Sold final = Suma depusă * (1 + Rata dobânzii) ^ Numărul de ani
+
+Astfel, pentru depozitul inițial de 500 de euro și o dobândă de 10% pe an, soldul la sfârșitul fiecărui an ar fi:
+
+La sfârșitul anului 1: 500 * (1 + 0.1) ^ 1 = 550 euro
+La sfârșitul anului 2: 500 * (1 + 0.1) ^ 2 = 605 euro
+La sfârșitul anului 3: 500 * (1 + 0.1) ^ 3 = 665.5 euro
+La sfârșitul anului 4: 500 * (1 + 0.1) ^ 4 = 732.05 euro
+La sfârșitul anului 5: 500 * (1 + 0.1) ^ 5 = 805.26 euro
+Astfel, soldul la sfârșitul fiecărui an ar crește treptat, ajungând la 805.26 de euro după cinci ani.
+
