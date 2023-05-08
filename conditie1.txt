@@ -1,0 +1,14 @@
+Sa se creeze un fisier index.php care, utilizand doua variabile:
+
+$x = 10;
+
+respectiv
+
+$y = 5;
+
+Sa se afiseze urmatorul continut:
+
+10 + 5 = 15
+10 - 5 = 5
+10 * 5 = 50
+10 / 5 = 2 
