@@ -1,0 +1,2 @@
+Scrieti un script care aduna toate numerele de la 0 la 30 si afisati rezultatul de forma:
+'0 + 1 + 2 + ... + 30 = ...'.

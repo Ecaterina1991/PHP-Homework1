@@ -1,0 +1,3 @@
+Sa se afiseze toate numerele din urmatorul array care sunt divizibile cu 6.
+
+$numere = array(6, 4, 15, 12, 36, 89, 45);
